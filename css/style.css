@@ -5,38 +5,3 @@
     background-color: #F5EFD7;
     position: absolute;
 }
-
-.logo {
-    float: left;
-    height: 2cm;
-    width: 2cm;
-}
-
-.menu {
-
-    justify-self: right;
-    float: inline-end;
-}
-
-.menu ul {
-    text-align: right;
-}
-
-.menu ul li {
-    display: inline;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 5px;
-    padding: 0 10 0 10;
-}
-
-.menu ul li a {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 0 10px 0 10px;
-}
-
-.menu ul li a:hover {
-    color: rgb(125, 158, 63);
-}
