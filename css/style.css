@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     font-size: 100%;
-    /*border: none;*/
+    /*border: none;    font-family: 'Pridi', serif;*/
     outline: none;
-    font-weight: 300;
     box-sizing: border-box;
-    font-family: 'Rufina', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {}
@@ -30,14 +29,17 @@ img {
 }
 
 #logo {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
     width: 96px;
-    height: 96px;
+    height: 90px;
     float: left;
 }
 
 .menu ul {
     padding: 3% 4%;
-    float: right;
 }
 
 .menu ul li {
@@ -63,44 +65,53 @@ img {
     height: 300px;
     position: relative;
     overflow: hidden;
-    opacity: 80%;
 }
 
 .foto {
     position: absolute;
     opacity: 0;
     animation-name: animacao;
-    animation-duration: 15s;
+    animation-duration: 13s;
     animation-iteration-count: infinite;
 }
 
 @keyframes animacao {
     25% {
-        opacity: 1;
+        opacity: 60%;
         transform: scale(1.1, 1.1);
     }
     50% {
-        opacity: 0;
+        opacity: 20%;
     }
 }
 
 .foto:nth-child(1) {
-    animation-delay: 5s;
+    animation-delay: 3s;
 }
 
 .foto:nth-child(2) {
-    animation-delay: 10s;
+    animation-delay: 8s;
 }
 
 .foto:nth-child(3) {
-    animation-delay: 15s;
+    animation-delay: 13s;
+}
+
+.slogan {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 .divBusca {
     margin-left: auto;
     margin-bottom: auto;
     margin-right: auto;
-    margin-top: 200px;
     background-color: #ffffff;
     border: solid 2px rgb(125, 158, 63);
     border-radius: 7px 7px 7px 7px;
