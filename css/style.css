@@ -8,8 +8,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {}
-
 a {
     text-decoration: none;
 }
@@ -44,7 +42,6 @@ img {
 
 .menu ul li {
     color: rgb(0, 0, 0);
-    text-decoration: none;
     font-weight: normal;
     margin-top: 0.5px;
     margin-left: 0.5px;
@@ -67,11 +64,11 @@ img {
     overflow: hidden;
 }
 
-.foto {
+.sliderImage {
     position: absolute;
     opacity: 0;
     animation-name: animacao;
-    animation-duration: 13s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
@@ -81,24 +78,24 @@ img {
         transform: scale(1.1, 1.1);
     }
     50% {
-        opacity: 20%;
+        opacity: 35%;
     }
 }
 
-.foto:nth-child(1) {
-    animation-delay: 3s;
+.sliderImage:nth-child(1) {
+    animation-delay: 0s;
 }
 
-.foto:nth-child(2) {
+.sliderImage:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.sliderImage:nth-child(3) {
     animation-delay: 8s;
 }
 
-.foto:nth-child(3) {
-    animation-delay: 13s;
-}
-
 .slogan {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 900;
     text-align: center;
     margin-top: 120px;
@@ -135,4 +132,80 @@ img {
     border: none;
     height: 32px;
     width: 191px;
+}
+
+.conjuntoDePropaganda {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 10px;
+    /* background-color: rgb(231, 0, 0); */
+}
+
+.conjuntoDePropaganda h2 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    padding: 0px 10px 0px 10px;
+    /* background-color: rgb(0, 231, 212); */
+}
+
+.propaganda {
+    /* background-color: rgb(97, 0, 253); */
+}
+
+.propaganda ul {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    /* background-color: lightcoral; */
+}
+
+.propaganda ul li {
+    display: inline-table;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    /* background-color: rgb(128, 148, 240); */
+}
+
+.images {
+    padding: 10px 5px 0px 5px;
+    width: 369px;
+    height: 240px;
+    /* background-color: rgb(154, 240, 128); */
+}
+
+.propaganda ul li a div {
+    padding: 0px 5px 5px 5px;
+    width: auto;
+    /* background-color: rgb(235, 196, 23); */
+}
+
+.textPropaganda h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.textPropaganda h4 {
+    font-size: 13px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.textPropaganda h3:visited {
+    color: #000000;
+}
+
+.textPropaganda h4:visited {
+    color: #000000;
+}
+
+.textPropaganda h3:hover {
+    color: rgb(125, 158, 63);
+}
+
+.textPropaganda h4:hover {
+    color: rgb(125, 158, 63);
 }
